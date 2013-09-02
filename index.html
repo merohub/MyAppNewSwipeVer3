@@ -11,6 +11,7 @@
 </style>
 
 <link rel="stylesheet" type="text/css" href="css/slider.css" />
+<link rel="stylesheet" type="text/css" href="css/smoothscroll.css" />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
@@ -157,7 +158,7 @@ I am an energetic and passionate person who enjoys a challenge and achieving per
 
 </p>
 
-
+<a href="#" ID="backToTop" class="styled-button-8" style="color:#000;">TOP</a>
 </div>
 
 
@@ -171,6 +172,20 @@ I am an energetic and passionate person who enjoys a challenge and achieving per
 
 
 </div><!--page ends-->
-
+<script type="text/javascript">
+jQuery(document).ready(function($){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 50) {
+            $('#backToTop').fadeIn('slow');
+        } else {
+            $('#backToTop').fadeOut('slow');
+        }
+    });
+    $('#backToTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+});
+</script>
 	</body>
 	</html>
