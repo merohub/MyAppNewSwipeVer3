@@ -18,10 +18,6 @@ $(document).on('pageinit',function(){
                     $.mobile.activePage.find('#myPanel').panel("open");
                 });
 
-                 $('div[data-role="content"]').on("swipeleft",function(){
-                    //console.log('swipe');
-                    $.mobile.activePage.find('#social').panel("open");
-               });
             });  
 </script>
 
@@ -98,7 +94,7 @@ img.fullscreen{width: 100%; height: auto; margin-bottom: 20px;}
 		
 <img src="images/mypic.jpg" class="fullscreen"/>
 		<ul data-role="listview" data-icon="false">
-			<li><a href="http://localhost/02-Sep-2013/swipehitlar001-master/swipehitlar001-master/">Home</a></li>
+			<li><a href="index.html">Home</a></li>
 			<li class="current"><a href="#">About</a></li>
 			<li><a href="work.html">Work</a></li>
 			
@@ -110,9 +106,7 @@ img.fullscreen{width: 100%; height: auto; margin-bottom: 20px;}
 	</div><!--myPanel-->
 
 	
-	<div data-role="panel" id="social" data-theme="a" class="ui-response" data-position="right">
-Facebook | twitter | youtube
-	</div><!--socila panel-->
+
 
 	
 
